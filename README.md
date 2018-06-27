@@ -8,6 +8,17 @@ This README outlines the details of collaborating on this Ember addon.
 * `cd ember-cli-global-app-instance`
 * `npm install`
 
+
+## Configuration
+
+Add config `ember-cli-global-app-instance` in `config/environment.js`
+
+```javascript
+ENV['ember-cli-global-app-instance'] = {
+  name: 'MyApp',
+};
+```
+
 ## Running
 
 * `ember serve`
