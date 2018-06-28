@@ -6,12 +6,15 @@
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Guangda Zhang <zhangxiaoyu9350@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkless/ember-cli-global-app-instance.git"
+  },
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
