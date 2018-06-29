@@ -1,7 +1,9 @@
 export function initialize(appInstance) {
   const config = appInstance.resolveRegistration('config:environment');
-  const name = config['ember-cli-global-app-instance'].name;
-  window[name] = appInstance;
+  const addonConfig = config['ember-cli-global-app-instance'];
+  if (addonConfig && addonConfig.name) {
+    window[addonConfig.name] = appInstance;
+  }
 }
 
 export default {
